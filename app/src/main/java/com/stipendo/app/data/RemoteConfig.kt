@@ -6,5 +6,5 @@ object RemoteConfig {
      * to your website and put its address here. It must start with https://.
      * Set it to "" to switch downloads off; the app then only uses the data bundled inside it.
      */
-    const val DATA_URL = "https://stipendo.app/data/scholarships.json"
+    const val DATA_URL = "https://github.com/afsar-khan/Stipendo/blob/9c68d288b7c18ba7e2ee2f562517f1f42a680c9c/app/src/main/assets/scholarships.json"
 }

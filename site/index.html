@@ -1,1 +1,56 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Stipendo</title><body style="font-family:system-ui;max-width:32rem;margin:15vh auto;padding:0 1rem"><h1>Stipendo</h1><p>Scholarships at Chinese universities. Free, with links to official pages only.</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stipendo</title>
+    <style>
+        body { font-family: system-ui; max-width: 40rem; margin: 5vh auto; padding: 0 1rem; line-height: 1.5; }
+        .card { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
+        .card h2 { margin-top: 0; font-size: 1.2rem; }
+        .meta { font-size: 0.9rem; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Stipendo</h1>
+    <p>Scholarships at Chinese universities. Free, with links to official pages only.</p>
+    
+    <!-- This is where the list will appear -->
+    <div id="scholarship-list">Loading...</div>
+
+    <script>
+        // This script fetches the JSON file and builds the list
+        fetch('/data/scholarships.json')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('scholarship-list');
+                list.innerHTML = ''; // Clear loading text
+
+                // FIXED: We need to access the 'scholarships' array inside the JSON object
+                data.scholarships.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    
+                    // FIXED: 'degrees' is an array, so we join it into a string. 
+                    // We also handle cases where a degree might be missing.
+                    const degreesText = item.degrees && item.degrees.length > 0 ? item.degrees.join(', ') : 'N/A';
+
+                    card.innerHTML = `
+                        <h2><a href="${item.officialUrl}" target="_blank" style="text-decoration: none; color: #0066cc;">${item.name}</a></h2>
+                        <div class="meta">
+                            <p><strong>Provider:</strong> ${item.provider || 'N/A'}</p>
+                            <p><strong>City:</strong> ${item.city || 'N/A'}</p>
+                            <p><strong>Degree:</strong> ${degreesText}</p>
+                            <p><strong>Deadline:</strong> ${item.deadline || 'N/A'}</p>
+                        </div>
+                    `;
+                    list.appendChild(card);
+                });
+            })
+            .catch(error => {
+                document.getElementById('scholarship-list').innerHTML = '<p style="color:red">Error loading data. Check JSON format.</p>';
+                console.error(error);
+            });
+    </script>
+</body>
+</html>

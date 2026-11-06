@@ -543,6 +543,65 @@
       "lastChecked": "2026-11-05",
       "addedOn": "2026-11-05",
       "updatedOn": "2026-11-05"
+    },
+    {
+      "id": "test-github-scholarship",
+      "university": "Test University",
+      "universityZh": "测试大学",
+      "city": "Test City",
+      "name": "TEST SCHOLARSHIP FROM GITHUB",
+      "provider": "Afsar Khan",
+      "degrees": [
+        "MASTER"
+      ],
+      "languages": [
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000
+      },
+      "languageRequirement": "No requirement",
+      "deadline": "2027-12-31",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://github.com",
+      "sourceUrl": "https://github.com",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+   
+    },
+    {
+      "id": "test-number-two",
+      "university": "Live Update University",
+      "universityZh": "实时更新大学",
+      "city": "Test City 2",
+      "name": "THIS IS A LIVE UPDATE TEST",
+      "provider": "Afsar Khan",
+      "degrees": ["MASTER"],
+      "languages": ["ENGLISH"],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {"MASTER": 3000},
+      "languageRequirement": "No requirement",
+      "deadline": "2028-01-01",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://github.com",
+      "sourceUrl": "https://github.com",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-06",
+      "updatedOn": "2026-11-06"
     }
   ]
 }
