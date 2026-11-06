@@ -1,0 +1,548 @@
+{
+  "version": 1,
+  "updated": "2026-11-05",
+  "scholarships": [
+    {
+      "id": "nju-cgs-b-2027",
+      "university": "Nanjing University",
+      "universityZh": "南京大学",
+      "city": "Nanjing",
+      "name": "Chinese Government Scholarship (Type B), High-Level Postgraduate Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "English-taught: IELTS 6.0, TOEFL 85, TOEFL Essentials 9 or Duolingo 100. Chinese-taught: HSK 4 (sciences, engineering, medicine) or HSK 5 (arts, social sciences, business).",
+      "deadline": "2027-01-20",
+      "cscDeadline": "2027-03-17",
+      "cscAgencyNumber": "10284",
+      "officialUrl": "https://hwxy.nju.edu.cn/English/StudyatNJU/Scholarships/ChineseGovernmentScholarship/20230414/i242759.html",
+      "sourceUrl": "https://hwxy.nju.edu.cn/English/StudyatNJU/Scholarships/ChineseGovernmentScholarship/20230414/i242759.html",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-03",
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "xmu-cgs-b-2027",
+      "university": "Xiamen University",
+      "universityZh": "厦门大学",
+      "city": "Xiamen",
+      "name": "Chinese Government Scholarship (Type B), University Program, Master's programs, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000
+      },
+      "languageRequirement": "English-medium: TOEFL iBT 80 or IELTS 6.0 (exempt if from an English-speaking country or previous degree taught in English). Chinese-medium: HSK 5 (humanities, economics, management, law, arts) or HSK 4 (sciences, engineering, medicine, PE), score 210 or better.",
+      "deadline": "2027-02-20",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10384",
+      "officialUrl": "https://admissions.xmu.edu.cn/info/1061/4630.htm",
+      "sourceUrl": "https://admissions.xmu.edu.cn/info/1061/4630.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-04",
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "hhu-cgs-2027",
+      "university": "Hohai University",
+      "universityZh": "河海大学",
+      "city": "Nanjing",
+      "name": "Chinese Government Scholarship, High-Level Graduate Student Program, 2027-2028",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "English evidence needed for non-native speakers",
+      "deadline": "2027-02-19",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10294",
+      "officialUrl": "https://ie.hhu.edu.cn/16299/list.htm",
+      "sourceUrl": "https://daadscholarship.com/hohai-university-csc-scholarships-2027-2028-application-process/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "zjnu-cgs-2027",
+      "university": "Zhejiang Normal University",
+      "universityZh": "浙江师范大学",
+      "city": "Jinhua",
+      "name": "Chinese Government Scholarship, High-Level Postgraduate Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": "2027-02-20",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://iso.zjnu.edu.cn/",
+      "sourceUrl": "https://daadscholarship.com/zhejiang-normal-university-csc-scholarship-2027-ms-phd-applications-process/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "hnnu-cgs-2027",
+      "university": "Hunan Normal University",
+      "universityZh": "湖南师范大学",
+      "city": "Changsha",
+      "name": "Chinese Government Scholarship, High-Level Graduate Student Program, 2027-2028",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "HSK 4 or above for Chinese-taught programs",
+      "deadline": "2027-02-21",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10542",
+      "officialUrl": "https://oiec.hunnu.edu.cn/",
+      "sourceUrl": "https://cscguideofficials.com/hunan-normal-university-csc-scholarship-update/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "pku-grad-2027",
+      "university": "Peking University",
+      "universityZh": "北京大学",
+      "city": "Beijing",
+      "name": "Graduate admission with Chinese Government (Type B), Beijing Government and PKU scholarships, 2027 entry",
+      "provider": "Peking University",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "From PKU's 2026 guide, confirm for 2027. Chinese-taught: HSK 6 (above 200 for sciences, above 210 for humanities, writing 65 or more). English-taught: TOEFL iBT 100 or GRE 315, or as each program states.",
+      "deadline": "2026-12-25",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10001",
+      "officialUrl": "https://isd.pku.edu.cn/en/",
+      "sourceUrl": "https://daadscholarship.com/peking-university-opens-csc-beijing-government-scholarships-2027-admissions-for-international-students/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "tju-cgs-b-2027",
+      "university": "Tianjin University",
+      "universityZh": "天津大学",
+      "city": "Tianjin",
+      "name": "Chinese Government Scholarship, High-Level Postgraduate Program (Type B), 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": "2027-01-15",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10056",
+      "officialUrl": "https://sie.tju.edu.cn/en/",
+      "sourceUrl": "https://daadscholarship.com/?p=31059",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "xmu-icl-year",
+      "university": "Xiamen University",
+      "universityZh": "厦门大学",
+      "city": "Xiamen",
+      "name": "International Chinese Language Teachers Scholarship (formerly Confucius Institute Scholarship): one academic year, up to 11 months, 2026 call",
+      "provider": "Centre for Language Education and Cooperation (CLEC)",
+      "degrees": [
+        "LANGUAGE"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [
+        "ONE_YEAR"
+      ],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "LANGUAGE": 2500
+      },
+      "languageRequirement": "Chinese Language Study: HSK 3 with 210 (an HSKK score gives priority). International Chinese language education: HSK 3 with 270 and an HSKK score. Not open to people who received a similar scholarship in the past three years. Age 16 to 35 on 1 September 2026.",
+      "deadline": "2026-05-15",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admissions.xmu.edu.cn/Scholarships/International_Chinese_Language_Teachers_Scholars.htm",
+      "sourceUrl": "https://admissions.xmu.edu.cn/Scholarships/International_Chinese_Language_Teachers_Scholars.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-04",
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "xmu-icl-semester",
+      "university": "Xiamen University",
+      "universityZh": "厦门大学",
+      "city": "Xiamen",
+      "name": "International Chinese Language Teachers Scholarship (formerly Confucius Institute Scholarship): one semester, up to 5 months, September 2026 or March 2027 start",
+      "provider": "Centre for Language Education and Cooperation (CLEC)",
+      "degrees": [
+        "LANGUAGE"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [
+        "SIX_MONTHS"
+      ],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "LANGUAGE": 2500
+      },
+      "languageRequirement": "International Chinese language education: HSK 3 with 180 and an HSKK score. Not open to people who received a similar scholarship in the past three years. Age 16 to 35 on 1 September 2026.",
+      "deadline": "2026-10-31",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admissions.xmu.edu.cn/Scholarships/International_Chinese_Language_Teachers_Scholars.htm",
+      "sourceUrl": "https://admissions.xmu.edu.cn/Scholarships/International_Chinese_Language_Teachers_Scholars.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-04",
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "blcu-icl-year",
+      "university": "Beijing Language and Culture University",
+      "universityZh": "北京语言大学",
+      "city": "Beijing",
+      "name": "International Chinese Language Teachers Scholarship (formerly Confucius Institute Scholarship): one-year study, up to 11 months, 2026 call",
+      "provider": "Centre for Language Education and Cooperation (CLEC)",
+      "degrees": [
+        "LANGUAGE"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [
+        "ONE_YEAR"
+      ],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "Chinese Language Study: HSK 3 with 210 (an HSKK score gives priority). Chinese language and literature: HSK 4 with 180 and HSKK 60. International Chinese language education: HSK 3 with 270 and an HSKK score. Not open to people who received a similar scholarship in the past three years. Age 16 to 35 on 1 September 2026.",
+      "deadline": "2026-05-15",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admission.blcu.edu.cn/en/2026/0303/c1148a3044/page.htm",
+      "sourceUrl": "https://admission.blcu.edu.cn/en/2026/0303/c1148a3044/page.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-04",
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "blcu-icl-semester",
+      "university": "Beijing Language and Culture University",
+      "universityZh": "北京语言大学",
+      "city": "Beijing",
+      "name": "International Chinese Language Teachers Scholarship (formerly Confucius Institute Scholarship): one semester, up to 5 months, September 2026 or March 2027 start",
+      "provider": "Centre for Language Education and Cooperation (CLEC)",
+      "degrees": [
+        "LANGUAGE"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [
+        "SIX_MONTHS"
+      ],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "Chinese language and literature or international Chinese language education: HSK 3 with 180 and an HSKK score. Not open to people who received a similar scholarship in the past three years. Age 16 to 35 on 1 September 2026.",
+      "deadline": "2026-10-31",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admission.blcu.edu.cn/en/2026/0303/c1148a3044/page.htm",
+      "sourceUrl": "https://admission.blcu.edu.cn/en/2026/0303/c1148a3044/page.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-04",
+      "addedOn": null,
+      "updatedOn": null
+    },
+    {
+      "id": "uibe-cgs-hlpp-2027",
+      "university": "University of International Business and Economics",
+      "universityZh": "对外经济贸易大学",
+      "city": "Beijing",
+      "name": "Chinese Government Scholarship, High-Level Postgraduate Program (2027-2028 call not announced yet; last year's call closed 28 February 2026)",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10036",
+      "officialUrl": "https://sie.uibe.edu.cn/",
+      "sourceUrl": "https://daadscholarship.com/deadlines-of-37-chinese-universities-csc-scholarships-2027-bs-ms-phd/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+    },
+    {
+      "id": "nku-cgs-b-2027",
+      "university": "Nankai University",
+      "universityZh": "南开大学",
+      "city": "Tianjin",
+      "name": "Chinese Government Scholarship (Type B), applications open 20 October 2026",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": "2027-03-20",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10055",
+      "officialUrl": "https://ensie.nankai.edu.cn/",
+      "sourceUrl": "https://daadscholarship.com/deadlines-of-37-chinese-universities-csc-scholarships-2027-bs-ms-phd/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+    },
+    {
+      "id": "nwpu-cgs-b-2027",
+      "university": "Northwestern Polytechnical University",
+      "universityZh": "西北工业大学",
+      "city": "Xi'an",
+      "name": "Chinese Government Scholarship, University Program (Type B), 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "Meet NPU's admission requirements for academic level, English proficiency and supervisor acceptance. Details are in NPU's Master and PhD application guides.",
+      "deadline": "2026-12-31",
+      "cscDeadline": "2027-02-28",
+      "cscAgencyNumber": "10699",
+      "officialUrl": "https://studyat.nwpu.edu.cn/info/1009/10571.htm",
+      "sourceUrl": "https://studyat.nwpu.edu.cn/info/1009/10571.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-05",
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+    },
+    {
+      "id": "hust-cgs-b-2027",
+      "university": "Huazhong University of Science and Technology",
+      "universityZh": "华中科技大学",
+      "city": "Wuhan",
+      "name": "Chinese Government Scholarship, Chinese University Program, Master's and doctoral, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "English-medium: TOEFL 80, IELTS 6.0 or Duolingo 120. Chinese-medium: HSK 4 with 180 (science, engineering, stomatology, pharmacy) or HSK 5 with 180 (economics, management, literature, law, education, medicine). Minimum GPA 3.0 out of 4.0. Age: Master's under 35, PhD under 40. Application fee RMB 800.",
+      "deadline": "2027-02-25",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10487",
+      "officialUrl": "https://iso.hust.edu.cn/Scholarships/Chinese_University_Program_CUP_.htm",
+      "sourceUrl": "https://iso.hust.edu.cn/Scholarships/Chinese_University_Program_CUP_.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-05",
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+    },
+    {
+      "id": "hust-silkroad-2027",
+      "university": "Huazhong University of Science and Technology",
+      "universityZh": "华中科技大学",
+      "city": "Wuhan",
+      "name": "Chinese Government Scholarship (Type B), Silk Road Program, Bachelor's, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "BACHELOR"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "Chinese-medium: HSK 4 with 180. Third-party summaries say only specified majors and applicants from ten listed countries qualify; confirm on HUST's Silk Road guide.",
+      "deadline": "2027-04-30",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10487",
+      "officialUrl": "https://iso.hust.edu.cn/",
+      "sourceUrl": "https://www.successtonicsblog.com/2026/10/apply-now-2027-huazhong-university-csc-scholarship-in-china-fully-funded",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+    },
+    {
+      "id": "dut-cgs-b-2027",
+      "university": "Dalian University of Technology",
+      "universityZh": "大连理工大学",
+      "city": "Dalian",
+      "name": "Chinese Government Scholarship: High Level Postgraduate Program and Silk-Road Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "Chinese-taught: HSK 4 with 180 (science, engineering, economics, management) or HSK 5 with 180 (humanities, foreign languages). English-taught: TOEFL 80, IELTS 5.5 or Duolingo 100, or previous study in English. Age: Master's under 35, PhD under 40. Teaching is generally in Chinese, with some English programs.",
+      "deadline": "2027-02-15",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10141",
+      "officialUrl": "https://sie.dlut.edu.cn/English/Scholarship1/CSC_Scholarship/Chinese_University_Program.htm",
+      "sourceUrl": "https://sie.dlut.edu.cn/English/Scholarship1/CSC_Scholarship/Chinese_University_Program.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-05",
+      "addedOn": "2026-11-05",
+      "updatedOn": "2026-11-05"
+    }
+  ]
+}
