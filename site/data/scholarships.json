@@ -944,6 +944,67 @@
       "lastChecked": null,
       "addedOn": "2026-11-07",
       "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "minzu-university-of-china-2026-international-chinese-language-teachers-scholarship",
+      "university": "Minzu University of China",
+      "universityZh": "中央民族大学",
+      "city": "Beijing",
+      "name": "International Chinese Language Teachers Scholarship",
+      "provider": "Center for Language Education and Cooperation (CLEC)",
+      "degrees": [
+        "BACHELOR",
+        "LANGUAGE"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "HSK 5 (>180 score) or above is required. HSK 4 (>180 score) is accepted for International Chinese language education program.",
+      "deadline": "2026-05-15",
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://cie.muc.edu.cn/info/1666/11449.htm",
+      "sourceUrl": "https://cie.muc.edu.cn/info/1666/11449.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "renmin-university-of-china-global-leadership-institute-2027",
+      "university": "Renmin University of China",
+      "universityZh": "中国人民大学",
+      "city": "Beijing",
+      "name": "Global EMBA and Professional Programs",
+      "provider": "Renmin University of China",
+      "degrees": [
+        "MASTER"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "http://sgl.ruc.edu.cn/",
+      "sourceUrl": "http://sgl.ruc.edu.cn/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
     }
   ]
 }
