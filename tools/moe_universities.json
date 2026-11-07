@@ -1,0 +1,614 @@
+[
+  {
+    "name": "中央民族大學",
+    "website": "http://www.muc.edu.cn/"
+  },
+  {
+    "name": "中央音樂學院",
+    "website": "http://www.ccom.edu.cn/"
+  },
+  {
+    "name": "中央美術學院",
+    "website": "http://www.cafa.edu.cn/"
+  },
+  {
+    "name": "中央財經大學",
+    "website": "http://www.cufe.edu.cn/"
+  },
+  {
+    "name": "中國人民大學",
+    "website": "http://www.ruc.edu.cn/"
+  },
+  {
+    "name": "中國石油大學(北京)",
+    "website": "http://www.cup.edu.cn"
+  },
+  {
+    "name": "中國地質大學(北京)",
+    "website": "http://www.cugb.edu.cn"
+  },
+  {
+    "name": "中國政法大學",
+    "website": "http://www.cupl.edu.cn/"
+  },
+  {
+    "name": "中國傳媒大學",
+    "website": "http://www.cuc.edu.cn/"
+  },
+  {
+    "name": "中國農業大學",
+    "website": "http://www.cau.edu.cn/"
+  },
+  {
+    "name": "中國礦業大學(北京)",
+    "website": "http://www.cumtb.edu.cn"
+  },
+  {
+    "name": "北京大學",
+    "website": "http://www.pku.edu.cn/"
+  },
+  {
+    "name": "北京工業大學",
+    "website": "http://www.bjut.edu.cn/"
+  },
+  {
+    "name": "北京化工大學",
+    "website": "http://www.buct.edu.cn/"
+  },
+  {
+    "name": "北京外國語大學",
+    "website": "http://www.bfsu.edu.cn"
+  },
+  {
+    "name": "北京交通大學",
+    "website": "http://www.njtu.edu.cn/"
+  },
+  {
+    "name": "北京林業大學",
+    "website": "http://www.bjfu.edu.cn/"
+  },
+  {
+    "name": "北京科技大學",
+    "website": "http://www.ustb.edu.cn/"
+  },
+  {
+    "name": "北京師範大學",
+    "website": "http://www.bnu.edu.cn/"
+  },
+  {
+    "name": "北京航空航天大學",
+    "website": "http://www.buaa.edu.cn/"
+  },
+  {
+    "name": "北京理工大學",
+    "website": "http://www.bit.edu.cn/"
+  },
+  {
+    "name": "北京郵電大學",
+    "website": "http://www.bupt.edu.cn/"
+  },
+  {
+    "name": "北京體育大學",
+    "website": "http://www.bsu.edu.cn/"
+  },
+  {
+    "name": "清華大學",
+    "website": "http://www.tsinghua.edu.cn/"
+  },
+  {
+    "name": "華北電力大學(北京)",
+    "website": "http://www.ncepu.edu.cn/"
+  },
+  {
+    "name": "對外經濟貿易大學",
+    "website": "http://www.uibe.edu.cn/"
+  },
+  {
+    "name": "中國音樂學院",
+    "website": "http://www.ccmusic.edu.cn/"
+  },
+  {
+    "name": "北京舞蹈學院",
+    "website": "http://www.bda.edu.cn/"
+  },
+  {
+    "name": "北京電影學院",
+    "website": "http://www.bfa.edu.cn/"
+  },
+  {
+    "name": "中國藝術研究院",
+    "website": "http://www.zgysyjy.org.cn/"
+  },
+  {
+    "name": "中央戲劇學院",
+    "website": "http://www.chntheatre.edu.cn"
+  },
+  {
+    "name": "中國戲曲學院",
+    "website": "http://www.nacta.edu.cn"
+  },
+  {
+    "name": "北京服裝學院",
+    "website": "http://www.bift.edu.cn"
+  },
+  {
+    "name": "中國科學院",
+    "website": "http://www.cas.cn"
+  },
+  {
+    "name": "中國科學院大學",
+    "website": "http://www.gucas.ac.cn/"
+  },
+  {
+    "name": "中國社會科學院",
+    "website": "http://www.gscass.cn"
+  },
+  {
+    "name": "首都師範大學",
+    "website": "http://www.cnu.edu.cn/"
+  },
+  {
+    "name": "天津大學",
+    "website": "http://www.tju.edu.cn/"
+  },
+  {
+    "name": "南開大學",
+    "website": "http://www.nankai.edu.cn/"
+  },
+  {
+    "name": "河北工業大學",
+    "website": "http://www.hebut.edu.cn/"
+  },
+  {
+    "name": "燕山大學",
+    "website": "http://www.ysu.edu.cn/"
+  },
+  {
+    "name": "河北大學",
+    "website": "http://www.hbu.edu.cn/"
+  },
+  {
+    "name": "河北農業大學",
+    "website": "http://www.hebau.edu.cn/"
+  },
+  {
+    "name": "太原理工大學",
+    "website": "http://www.tyut.edu.cn/"
+  },
+  {
+    "name": "山西大學",
+    "website": "http://www.sxu.edu.cn/"
+  },
+  {
+    "name": "中北大學",
+    "website": "http://www.nuc.edu.cn/"
+  },
+  {
+    "name": "內蒙古大學",
+    "website": "http://www.imu.edu.cn/"
+  },
+  {
+    "name": "大連海事大學",
+    "website": "http://www.dlmu.edu.cn/"
+  },
+  {
+    "name": "大連理工大學",
+    "website": "http://www.dlut.edu.cn/"
+  },
+  {
+    "name": "東北大學",
+    "website": "http://www.neu.edu.cn/"
+  },
+  {
+    "name": "遼寧大學",
+    "website": "http://www.lnu.edu.cn/"
+  },
+  {
+    "name": "魯迅美術學院",
+    "website": "http://www.lumei.edu.cn/"
+  },
+  {
+    "name": "東北財經大學",
+    "website": "http://www.dufe.edu.cn/"
+  },
+  {
+    "name": "吉林大學",
+    "website": "http://www.jlu.edu.cn/"
+  },
+  {
+    "name": "延邊大學",
+    "website": "http://www.ybu.edu.cn/"
+  },
+  {
+    "name": "東北師範大學",
+    "website": "http://www.nenu.edu.cn/"
+  },
+  {
+    "name": "長春理工大學",
+    "website": "http://www.cust.edu.cn/"
+  },
+  {
+    "name": "東北林業大學",
+    "website": "http://www.nefu.edu.cn/"
+  },
+  {
+    "name": "東北農業大學",
+    "website": "http://www.neau.edu.cn/"
+  },
+  {
+    "name": "哈爾濱工程大學",
+    "website": "http://www.hrbeu.edu.cn/"
+  },
+  {
+    "name": "哈爾濱工業大學",
+    "website": "http://www.hit.edu.cn/"
+  },
+  {
+    "name": "黑龍江大學",
+    "website": "http://www.hlju.edu.cn/"
+  },
+  {
+    "name": "上海大學",
+    "website": "http://www.shu.edu.cn"
+  },
+  {
+    "name": "上海外國語大學",
+    "website": "http://www.shisu.edu.cn/"
+  },
+  {
+    "name": "上海交通大學",
+    "website": "http://www.sjtu.edu.cn/"
+  },
+  {
+    "name": "上海財經大學",
+    "website": "http://www.shufe.edu.cn"
+  },
+  {
+    "name": "同濟大學",
+    "website": "http://www.tongji.edu.cn/"
+  },
+  {
+    "name": "東華大學",
+    "website": "http://www.dhu.edu.cn"
+  },
+  {
+    "name": "復旦大學",
+    "website": "http://www.fudan.edu.cn/"
+  },
+  {
+    "name": "華東師範大學",
+    "website": "http://www.ecnu.edu.cn/"
+  },
+  {
+    "name": "華東理工大學",
+    "website": "http://www.ecust.edu.cn/"
+  },
+  {
+    "name": "上海音樂學院",
+    "website": "http://www.shcmusic.edu.cn/"
+  },
+  {
+    "name": "上海戲劇學院",
+    "website": "http://www.sta.edu.cn/"
+  },
+  {
+    "name": "上海體育學院",
+    "website": "http://www.sus.edu.cn"
+  },
+  {
+    "name": "中國礦業大學(徐州)",
+    "website": "http://www.cumt.edu.cn/"
+  },
+  {
+    "name": "江南大學",
+    "website": "http://www.jiangnan.edu.cn/"
+  },
+  {
+    "name": "東南大學",
+    "website": "http://www.seu.edu.cn/"
+  },
+  {
+    "name": "河海大學",
+    "website": "http://www.hhu.edu.cn/"
+  },
+  {
+    "name": "南京大學",
+    "website": "http://www.nju.edu.cn/"
+  },
+  {
+    "name": "南京師範大學",
+    "website": "http://www.njnu.edu.cn/"
+  },
+  {
+    "name": "南京航空航天大學",
+    "website": "http://www.nuaa.edu.cn/"
+  },
+  {
+    "name": "南京理工大學",
+    "website": "http://www.njust.edu.cn/"
+  },
+  {
+    "name": "南京農業大學",
+    "website": "http://www.njau.edu.cn/"
+  },
+  {
+    "name": "蘇州大學",
+    "website": "http://www.suda.edu.cn/"
+  },
+  {
+    "name": "南京藝術學院",
+    "website": "http://www.njarti.edu.cn"
+  },
+  {
+    "name": "南通大學",
+    "website": "http://www.ntu.edu.cn/"
+  },
+  {
+    "name": "南京郵電大學",
+    "website": "http://www.njupt.edu.cn/"
+  },
+  {
+    "name": "浙江大學",
+    "website": "http://www.zju.edu.cn/"
+  },
+  {
+    "name": "中國美術學院",
+    "website": "http://www.chinaacademyofart.com"
+  },
+  {
+    "name": "浙江工業大學",
+    "website": "http://www.zjut.edu.cn/"
+  },
+  {
+    "name": "寧波大學",
+    "website": "http://www.nbu.edu.cn/"
+  },
+  {
+    "name": "杭州電子科技大學",
+    "website": "http://www.hdu.edu.cn/"
+  },
+  {
+    "name": "中國科學技術大學",
+    "website": "http://www.ustc.edu.cn/"
+  },
+  {
+    "name": "合肥工業大學",
+    "website": "http://www.hfut.edu.cn/"
+  },
+  {
+    "name": "安徽大學",
+    "website": "http://www.ahu.edu.cn/"
+  },
+  {
+    "name": "福州大學",
+    "website": "http://www.fzu.edu.cn"
+  },
+  {
+    "name": "廈門大學",
+    "website": "http://www.xmu.edu.cn/"
+  },
+  {
+    "name": "福建師範大學",
+    "website": "http://www.fjnu.edu.cn/"
+  },
+  {
+    "name": "南昌大學",
+    "website": "http://www.ncu.edu.cn/"
+  },
+  {
+    "name": "江西財經大學",
+    "website": "http://www.jxufe.edu.cn/"
+  },
+  {
+    "name": "山東大學",
+    "website": "http://www.sdu.edu.cn/"
+  },
+  {
+    "name": "中國石油大學(華東)",
+    "website": "http://www.upc.edu.cn/"
+  },
+  {
+    "name": "中國海洋大學",
+    "website": "http://www.ouc.edu.cn/"
+  },
+  {
+    "name": "山東農業大學",
+    "website": "http://www.sdau.edu.cn/"
+  },
+  {
+    "name": "濟南大學",
+    "website": "http://www.ujn.edu.cn/"
+  },
+  {
+    "name": "山東財經大學",
+    "website": "http://www.sdufe.edu.cn/"
+  },
+  {
+    "name": "鄭州大學",
+    "website": "http://www.zzu.edu.cn/"
+  },
+  {
+    "name": "河南大學",
+    "website": "http://www.henu.edu.cn/"
+  },
+  {
+    "name": "河南農業大學",
+    "website": "http://www.henau.edu.cn/"
+  },
+  {
+    "name": "中南財經政法大學",
+    "website": "http://www.znufe.edu.cn/"
+  },
+  {
+    "name": "中國地質大學(武漢)",
+    "website": "http://www.cug.edu.cn/"
+  },
+  {
+    "name": "武漢大學",
+    "website": "http://www.whu.edu.cn/"
+  },
+  {
+    "name": "武漢理工大學",
+    "website": "http://www.whut.edu.cn/"
+  },
+  {
+    "name": "華中科技大學",
+    "website": "http://www.hust.edu.cn/"
+  },
+  {
+    "name": "華中師範大學",
+    "website": "http://www.ccnu.edu.cn/"
+  },
+  {
+    "name": "華中農業大學",
+    "website": "http://www.hzau.edu.cn/"
+  },
+  {
+    "name": "武漢體育學院",
+    "website": "http://www.wipe.edu.cn/"
+  },
+  {
+    "name": "中南大學",
+    "website": "http://www.csu.edu.cn/"
+  },
+  {
+    "name": "湖南大學",
+    "website": "http://www.hnu.edu.cn/"
+  },
+  {
+    "name": "湖南師範大學",
+    "website": "http://www.hunnu.edu.cn/"
+  },
+  {
+    "name": "湘潭大學",
+    "website": "http://www.xtu.edu.cn/"
+  },
+  {
+    "name": "長沙理工大學",
+    "website": "http://www.csust.edu.cn/"
+  },
+  {
+    "name": "中山大學",
+    "website": "http://www.sysu.edu.cn/"
+  },
+  {
+    "name": "華南師範大學",
+    "website": "http://www.scnu.edu.cn/scnu/"
+  },
+  {
+    "name": "華南理工大學",
+    "website": "http://www.scut.edu.cn/"
+  },
+  {
+    "name": "廣州美術學院",
+    "website": "http://www.gzarts.edu.cn"
+  },
+  {
+    "name": "廣西大學",
+    "website": "http://www.gxu.edu.cn/"
+  },
+  {
+    "name": "海南大學",
+    "website": "http://www.hainu.edu.cn/"
+  },
+  {
+    "name": "西南大學",
+    "website": "http://www.swnu.edu.cn/"
+  },
+  {
+    "name": "重慶大學",
+    "website": "http://www.cqu.edu.cn/"
+  },
+  {
+    "name": "四川大學",
+    "website": "http://www.scu.edu.cn/"
+  },
+  {
+    "name": "四川農業大學",
+    "website": "http://www.sicau.edu.cn/"
+  },
+  {
+    "name": "西南交通大學",
+    "website": "http://www.swjtu.edu.cn/"
+  },
+  {
+    "name": "西南財經大學",
+    "website": "http://www.swufe.edu.cn/"
+  },
+  {
+    "name": "電子科技大學",
+    "website": "http://www.uestc.edu.cn/"
+  },
+  {
+    "name": "成都理工大學",
+    "website": "http://www.cdut.edu.cn/"
+  },
+  {
+    "name": "西南科技大學",
+    "website": "http://www.swust.edu.cn/"
+  },
+  {
+    "name": "貴州大學",
+    "website": "http://www.gzu.edu.cn/"
+  },
+  {
+    "name": "雲南大學",
+    "website": "http://www.ynu.edu.cn/"
+  },
+  {
+    "name": "西藏大學",
+    "website": "http://www.utibet.edu.cn/"
+  },
+  {
+    "name": "西北大學",
+    "website": "http://www.nwu.edu.cn/"
+  },
+  {
+    "name": "西北工業大學",
+    "website": "http://www.nwpu.edu.cn/"
+  },
+  {
+    "name": "西北農林科技大學",
+    "website": "http://www.nwsuaf.edu.cn/"
+  },
+  {
+    "name": "西安交通大學",
+    "website": "http://www.xjtu.edu.cn/"
+  },
+  {
+    "name": "西安電子科技大學",
+    "website": "http://www.xidian.edu.cn/"
+  },
+  {
+    "name": "長安大學",
+    "website": "http://www.chd.edu.cn/"
+  },
+  {
+    "name": "陝西師範大學",
+    "website": "http://www.snnu.edu.cn/"
+  },
+  {
+    "name": "蘭州大學",
+    "website": "http://www.lzu.edu.cn/"
+  },
+  {
+    "name": "西北師範大學",
+    "website": "http://www.nwnu.edu.cn/"
+  },
+  {
+    "name": "青海大學",
+    "website": "http://www.qhu.edu.cn/"
+  },
+  {
+    "name": "寧夏大學",
+    "website": "http://www.nxu.edu.cn/"
+  },
+  {
+    "name": "石河子大學",
+    "website": "http://www.shzu.edu.cn/"
+  },
+  {
+    "name": "新疆大學",
+    "website": "http://www.xju.edu.cn/"
+  }
+]

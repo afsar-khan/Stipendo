@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Python cache
+__pycache__/
+*.pyc
+
+# Secret API Keys
+.env
