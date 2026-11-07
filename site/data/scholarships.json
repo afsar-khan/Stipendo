@@ -794,6 +794,32 @@
       "lastChecked": null,
       "addedOn": "2026-11-07",
       "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "china-petroleum-university-beijing-2026",
+      "university": "China University of Petroleum, Beijing",
+      "universityZh": "中国石油大学（北京）",
+      "city": "Beijing",
+      "name": "2026/2027 Academic Year Admission Scholarship",
+      "provider": "China University of Petroleum, Beijing",
+      "degrees": null,
+      "languages": null,
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admission.cup.edu.cn/",
+      "sourceUrl": "https://admission.cup.edu.cn/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
     }
   ]
 }
