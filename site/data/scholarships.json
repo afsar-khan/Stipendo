@@ -1067,6 +1067,32 @@
       "lastChecked": null,
       "addedOn": "2026-11-07",
       "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "north-china-electric-power-university-2026",
+      "university": "North China Electric Power University",
+      "universityZh": "华北电力大学",
+      "city": "Beijing",
+      "name": null,
+      "provider": null,
+      "degrees": [],
+      "languages": [],
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://icd.ncepu.edu.cn/",
+      "sourceUrl": "https://icd.ncepu.edu.cn/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
     }
   ]
 }
