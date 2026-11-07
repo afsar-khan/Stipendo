@@ -1,39 +1,31 @@
-# Stipendo v14: the app updates its data from your website
+# Stipendo v16: clean-up after the review
 
-Apply on top of v13 (copy folders over your project, replace existing files).
-The manifest is replaced too: it adds the INTERNET permission. No Gradle changes.
-Put the tools/ and site/ folders next to app/ in the project root.
+## What is in this zip
+- site/data/scholarships.json and app/src/main/assets/scholarships.json   the same clean file, 17 entries
+  (made from your scholarships.csv, so it is the single source of truth again)
+- tools/drafts_from_scraper.csv   the 13 distinct entries your scraper added (3 exact duplicates removed),
+  as draft rows in the spreadsheet format. Nothing is lost; they are just not live.
+- tools/draft_rows.py (v2)   drafts rows with Gemini (your free key) or Claude, with quote checks
 
-How it works
-- The app starts with the data bundled inside it (works offline, always).
-- In the background it asks your website for newer data. If the file is valid, not older than
-  what the phone has, and not suddenly less than half the size, it replaces the phone's copy and
-  the list refreshes. Anything wrong: ignored, nothing breaks.
-- Checking is cheap: the app sends the last ETag, and the server answers "unchanged".
-- When you release a new version of the app, its bundled data is used if it is newer than the download.
+## Why the 16 scraped entries and the 2 test entries came out of the live file
+- 12 of 16 had no usable fact (no deadline, fee, language rule, stipend or agency number)
+- 4 had deadlines that already passed; 3 were duplicates
+- Most pointed to a university homepage, not a notice page
+- The file the app reads is built from scholarships.csv. The next time you run csv_to_json.py and build_site.py,
+  anything that exists only in the live file disappears. Keep ONE source: the CSV.
+- test-github-scholarship and test-number-two were still live.
 
-One-time setup (about 15 minutes)
-1. Go to Netlify (netlify.com/drop) and drag the `site` folder onto it. You get an address like
-   https://something.netlify.app
-2. Open  https://something.netlify.app/data/scholarships.json  in a browser. You should see the data.
-3. Put that address in app/src/main/java/com/stipendo/app/data/RemoteConfig.kt (DATA_URL).
-   Later, add your domain stipendo.app in Netlify (Domain settings) and change DATA_URL to
-   https://stipendo.app/data/scholarships.json  (an app update is needed for that one change).
-4. Run the app on a phone. In Logcat (filter "Stipendo") you will see "Data update skipped"
-   if something is wrong, and nothing at all when it works.
+## Do these now
+1. Replace the two scholarships.json files with the ones here, commit, push.
+2. Rotate your Gemini key (Google AI Studio: create a new key, delete the old one) and update .env.
+   The old one was shared in a chat. .env is correctly listed in .gitignore; keep it that way.
+3. Retire ai_scraper.py and batch_scraper.py (move them to a folder called old/). Use draft_rows.py instead.
+4. In RemoteConfig.kt set DATA_URL to https://stipendo.netlify.app/data/scholarships.json
+5. Weekly: watch_pages.py > draft_rows.py --changed > read the evidence file > check the official page >
+   copy good rows into scholarships.csv > csv_to_json.py > build_site.py > push.
 
-Test that updates really arrive
-- Install the app. Then add a row to tools/scholarships.csv, run  python3 tools/csv_to_json.py
-  and  python3 tools/build_site.py , upload the site folder again, force-stop the app and open it:
-  the new entry appears (with a "New" mark) without reinstalling.
-
-Weekly routine: edit the spreadsheet > csv_to_json.py > build_site.py > upload the site folder.
-(Netlify can also deploy automatically from a GitHub repository if you prefer.)
-
-Privacy policy: the app now contacts your website when it opens, so your host can see the phone's
-IP address, like any website visit. Say so in the policy. No personal data is sent.
-
-Safety notes
-- Whoever controls the website controls what students see. Use a strong password and two-step
-  login on Netlify and on your domain registrar.
-- Keep your old data file: if a bad file ever goes out, republish the previous one.
+## draft_rows.py v2
+- Reads GEMINI_API_KEY (free tier) or ANTHROPIC_API_KEY from .env, without any extra package.
+- Skips pages with almost no admission words (homepages) and tells you to find the real notice page.
+- Keeps every quote check: a fact with no matching quote on the page is dropped.
+- Gemini part not tested against the real service from here (offline tests only). Try it on the Nanjing page first.
