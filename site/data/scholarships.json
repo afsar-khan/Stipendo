@@ -763,6 +763,37 @@
       "lastChecked": null,
       "addedOn": "2026-11-07",
       "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "central-university-of-finance-and-economics-2026-silk-road",
+      "university": "Central University of Finance and Economics",
+      "universityZh": "中央财经大学",
+      "city": "Beijing",
+      "name": "中央财经大学2026年中国政府奖学金“丝绸之路”项目申请指南",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "BACHELOR",
+        "MASTER"
+      ],
+      "languages": [
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "本科生项目：HSK五级（180分或以上）；硕士研究生项目：HSK五级（210分或以上）。",
+      "deadline": "2026-04-30",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10034",
+      "officialUrl": "https://sice.cufe.edu.cn/admissions/info/1061/3450.htm",
+      "sourceUrl": "https://sice.cufe.edu.cn/admissions/info/1061/3450.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
     }
   ]
 }
