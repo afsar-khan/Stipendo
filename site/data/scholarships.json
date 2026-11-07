@@ -1005,6 +1005,68 @@
       "lastChecked": null,
       "addedOn": "2026-11-07",
       "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "beijing-normal-university-2026",
+      "university": "Beijing Normal University",
+      "universityZh": "北京师范大学",
+      "city": "Beijing",
+      "name": "Beijing Normal University International Student Scholarship",
+      "provider": "Beijing Normal University",
+      "degrees": [
+        "BACHELOR",
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admission.bnu.edu.cn/",
+      "sourceUrl": "https://admission.bnu.edu.cn/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
+    },
+    {
+      "id": "beihang-university-2026",
+      "university": "Beihang University",
+      "universityZh": "北京航空航天大学",
+      "city": "Beijing",
+      "name": "International Student Online Application",
+      "provider": "Beihang University",
+      "degrees": null,
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "VARIES",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": null,
+      "officialUrl": "https://admission.buaa.edu.cn/",
+      "sourceUrl": "https://admission.buaa.edu.cn/",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-07",
+      "updatedOn": "2026-11-07"
     }
   ]
 }
