@@ -58,7 +58,7 @@ def run_batch():
         universities = json.load(f)
 
     # Test with the first 5 universities
-    universities_to_scrape = universities[:5]
+    universities_to_scrape = universities[10:15]
 
     all_scholarships = []
     
