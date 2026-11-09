@@ -6,6 +6,7 @@ Draft spreadsheet rows from official web pages, with AI. A person always reviews
       GEMINI_API_KEY=your-key        (free tier works; this is used first if present)
       ANTHROPIC_API_KEY=your-key     (paid, optional)
   python3 draft_rows.py --changed           # pages the radar flagged (watch_pages.py)
+  python3 draft_rows.py --universities     # every university in csc_universities.csv that has a noticeUrl filled in
   python3 draft_rows.py URL [URL ...]       # specific official pages
 
 What it does
@@ -241,6 +242,7 @@ def main():
     ap = argparse.ArgumentParser(description="Draft spreadsheet rows from official pages with AI.")
     ap.add_argument("urls", nargs="*")
     ap.add_argument("--changed", action="store_true", help="use the pages watch_pages.py flagged as changed")
+    ap.add_argument("--universities", action="store_true", help="use the noticeUrl column of csc_universities.csv")
     ap.add_argument("--changes-file", default=str(HERE / "watch_list.changes.json"))
     ap.add_argument("--page-file", help="testing: read the page text from this file instead of the web")
     ap.add_argument("--response-file", help="testing: read the model's answer from this file instead of calling the API")
@@ -250,6 +252,13 @@ def main():
     if a.changed:
         try: urls += [c["url"] for c in json.loads(Path(a.changes_file).read_text(encoding="utf-8"))]
         except Exception as e: sys.exit(f"Cannot read {a.changes_file}: {e}\nRun watch_pages.py first.")
+    if a.universities:
+        try:
+            with open(HERE / "csc_universities.csv", encoding="utf-8-sig") as f:
+                urls += [r["noticeUrl"].strip() for r in csv.DictReader(f) if r.get("noticeUrl", "").strip()]
+        except Exception as e: sys.exit(f"Cannot read csc_universities.csv: {e}")
+        if not urls: sys.exit("No noticeUrl filled in csc_universities.csv yet. Add the address of each university's notice page first.")
+    urls = list(dict.fromkeys(urls))   # no page twice
     if not urls: sys.exit("Nothing to do. Give page addresses, or use --changed after running watch_pages.py.")
 
     load_env()
