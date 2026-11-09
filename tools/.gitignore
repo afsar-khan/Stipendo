@@ -1,0 +1,5 @@
+drafts_*
+*.state.json
+*.changes.json
+radar_report.md
+__pycache__/
