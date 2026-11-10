@@ -4,6 +4,7 @@ Page radar: tells you which official pages changed since the last time you ran i
 
   python watch_pages.py                  # uses watch_list.csv next to this file
   python watch_pages.py my_list.csv
+  python watch_pages.py --universities   # also watch the noticeUrl pages in csc_universities.csv
   python watch_pages.py --report         # also writes radar_report.md when pages changed (for the weekly automatic run)
   python watch_pages.py --state some/file.json   # keep the page memory somewhere else
 
@@ -14,7 +15,7 @@ a change on a page is a reason to look, not a verified fact.
 
 watch_list.csv columns: id, name, url   (add a row for every official page you rely on)
 """
-import csv, hashlib, json, sys, datetime
+import csv, hashlib, json, re, sys, datetime
 from pathlib import Path
 from pagetext import page_text, sentences
 
@@ -36,9 +37,26 @@ today = datetime.date.today().isoformat()
 counts = {"NEW": 0, "CHANGED": 0, "same": 0, "UNREACHABLE": 0}
 changed_pages = []
 
-with open(LIST, newline="", encoding="utf-8-sig") as f:
-    for row in csv.DictReader(f):
+def watched_rows():
+    with open(LIST, newline="", encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            yield row
+    if "--universities" in sys.argv:              # also watch every noticeUrl in csc_universities.csv
+        listed = HERE / "csc_universities.csv"
+        if listed.exists():
+            with open(listed, newline="", encoding="utf-8-sig") as f:
+                for r in csv.DictReader(f):
+                    if (r.get("noticeUrl") or "").strip():
+                        slug = re.sub(r"[^a-z0-9]+", "-", r["name"].lower()).strip("-")
+                        yield {"id": "uni-" + slug, "name": r["name"] + ": notice page", "url": r["noticeUrl"].strip()}
+
+seen_urls = set()
+if True:
+    for row in watched_rows():
         pid, name, url = row["id"].strip(), row["name"].strip(), row["url"].strip()
+        if url in seen_urls:                      # the same page listed twice: look once
+            continue
+        seen_urls.add(url)
         try:
             text = page_text(url)
         except Exception as e:

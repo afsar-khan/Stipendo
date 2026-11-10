@@ -22,7 +22,7 @@ jobs:
           python-version: "3.12"
 
       - name: Look at every page in the list
-        run: python tools/watch_pages.py tools/watch_list.csv --state tools/radar_state/ci.json --report
+        run: python tools/watch_pages.py tools/watch_list.csv --state tools/radar_state/ci.json --universities --report
 
       - name: Save what the pages looked like
         run: |
