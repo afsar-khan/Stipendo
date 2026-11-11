@@ -1235,7 +1235,7 @@
       "university": "Central South University",
       "universityZh": "中南大学",
       "city": "Changsha",
-      "name": "Chinese Government Scholarship High-Level Graduate Program (Type B), 2026-2027 entry",
+      "name": "Chinese Government Scholarship High-Level Graduate Program (Type B), 2026-2027 entry (closed)",
       "provider": "China Scholarship Council",
       "degrees": [
         "MASTER",
@@ -1252,22 +1252,22 @@
         "PHD": 3500
       },
       "languageRequirement": null,
-      "deadline": "2026-02-15",
-      "cscDeadline": null,
+      "deadline": null,
+      "cscDeadline": "2026-02-15",
       "cscAgencyNumber": "10533",
       "officialUrl": "https://intl.csu.edu.cn/info/1078/3773.htm",
       "sourceUrl": "https://intl.csu.edu.cn/info/1078/3773.htm",
       "verification": "REPORTED",
       "lastChecked": null,
       "addedOn": "2026-11-11",
-      "updatedOn": null
+      "updatedOn": "2026-11-11"
     },
     {
       "id": "jlu-cgs-b-2026-2027",
       "university": "Jilin University",
       "universityZh": "吉林大学",
       "city": "Changchun",
-      "name": "Chinese Government Scholarship High-Level Graduate Program (Type B), 2026-2027 entry",
+      "name": "Chinese Government Scholarship High-Level Graduate Program (Type B), 2026-2027 entry (closed)",
       "provider": "China Scholarship Council",
       "degrees": [
         "MASTER",
@@ -1284,21 +1284,21 @@
         "PHD": 3500
       },
       "languageRequirement": null,
-      "deadline": "2026-03-01",
-      "cscDeadline": null,
+      "deadline": null,
+      "cscDeadline": "2026-03-01",
       "cscAgencyNumber": "10183",
       "officialUrl": "https://cie.jlu.edu.cn/info/1047/3592.htm",
       "sourceUrl": "https://cie.jlu.edu.cn/info/1047/3592.htm",
       "verification": "REPORTED",
       "lastChecked": null,
       "addedOn": "2026-11-11",
-      "updatedOn": null
+      "updatedOn": "2026-11-11"
     },
     {
       "id": "sdu-cgs-b",
-      "university": "Jilin University",
-      "universityZh": "吉林大学",
-      "city": "Changchun",
+      "university": "Shandong University",
+      "universityZh": "山东大学",
+      "city": "Jinan",
       "name": "Chinese Government Scholarship (Type B), official scholarship page (dates not confirmed for 2027)",
       "provider": "China Scholarship Council",
       "degrees": [
@@ -1321,7 +1321,7 @@
       "verification": "REPORTED",
       "lastChecked": null,
       "addedOn": "2026-11-11",
-      "updatedOn": null
+      "updatedOn": "2026-11-11"
     }
   ]
 }
