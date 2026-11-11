@@ -1453,6 +1453,208 @@
       "lastChecked": null,
       "addedOn": "2026-11-11",
       "updatedOn": null
+    },
+    {
+      "id": "ccnu-cgs-b-2027",
+      "university": "Central China Normal University",
+      "universityZh": "华中师范大学",
+      "city": "Wuhan",
+      "name": "2027 Chinese Government Scholarship High Level Postgraduate Program",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "Chinese-taught: HSK 5 or above. English-taught: TOEFL 85 or IELTS 6.0 or above.",
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10511",
+      "officialUrl": "https://dge.ccnu.edu.cn/info/1381/32451.htm",
+      "sourceUrl": "https://dge.ccnu.edu.cn/info/1381/32451.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "muc-cgs-b-2027",
+      "university": "Minzu University of China",
+      "universityZh": "中央民族大学",
+      "city": "Beijing",
+      "name": "Chinese Government Scholarship - High Level Postgraduate Program 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "Chinese-taught: HSK 4 or above. English-taught: TOEFL 80 or IELTS 6.0 or above.",
+      "deadline": "2027-01-31",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10052",
+      "officialUrl": "https://cie.muc.edu.cn/info/1111/13839.htm",
+      "sourceUrl": "https://cie.muc.edu.cn/info/1111/13839.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "nefu-master-2027",
+      "university": "Northeast Forestry University",
+      "universityZh": "东北林业大学",
+      "city": "Harbin",
+      "name": "Chinese Government Scholarship (Type B) - Master's Program 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000
+      },
+      "languageRequirement": "Chinese-taught: HSK 4 (180+). English-taught: IELTS 6.0 or TOEFL 80 or above.",
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10225",
+      "officialUrl": "https://siee.nefu.edu.cn/jxjxm/zgzfjxj.htm",
+      "sourceUrl": "https://siee.nefu.edu.cn/jxjxm/zgzfjxj.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "nefu-phd-2027",
+      "university": "Northeast Forestry University",
+      "universityZh": "东北林业大学",
+      "city": "Harbin",
+      "name": "Chinese Government Scholarship (Type B) - Doctoral Program 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "PHD": 3500
+      },
+      "languageRequirement": "Chinese-taught: HSK 4 (180+). English-taught: IELTS 6.5 or TOEFL 95 or above.",
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10225",
+      "officialUrl": "https://siee.nefu.edu.cn/jxjxm/zgzfjxj.htm",
+      "sourceUrl": "https://siee.nefu.edu.cn/jxjxm/zgzfjxj.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "nenu-master-2027-2028",
+      "university": "Northeast Normal University",
+      "universityZh": "东北师范大学",
+      "city": "Changchun",
+      "name": "Chinese Government Scholarship High-level Graduates Program (Type B) 2027-2028 Master's Program",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000
+      },
+      "languageRequirement": "Chinese-taught: HSK 5 (180+). English-taught: TOEFL 80 or IELTS 6.0 or above.",
+      "deadline": "2027-02-28",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10200",
+      "officialUrl": "https://iso.nenu.edu.cn/info/1060/3126.htm",
+      "sourceUrl": "https://iso.nenu.edu.cn/info/1060/3126.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "nenu-phd-2027-2028",
+      "university": "Northeast Normal University",
+      "universityZh": "东北师范大学",
+      "city": "Changchun",
+      "name": "Chinese Government Scholarship High-level Graduates Program (Type B) 2027-2028 Doctoral Program",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "PHD": 3500
+      },
+      "languageRequirement": "Chinese-taught: HSK 5 (180+). English-taught: TOEFL 80 or IELTS 6.0 or above.",
+      "deadline": "2027-02-28",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10200",
+      "officialUrl": "https://iso.nenu.edu.cn/info/1060/3126.htm",
+      "sourceUrl": "https://iso.nenu.edu.cn/info/1060/3126.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
     }
   ]
 }
