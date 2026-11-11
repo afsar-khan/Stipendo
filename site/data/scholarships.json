@@ -413,7 +413,7 @@
       "coversHousing": true,
       "tuitionRmbPerYear": null,
       "stipendRmbByDegree": {},
-      "languageRequirement": "申请以中文为专业教学语言的申请人须提供有效期内的HSK四级成绩报告；曾使用中文为教学语言获得中国高校学位的，无须提供《汉语水平考试》（HSK）证明。申请以英语为专业教学语言的申请人，须提供雅思、托福等有效语言成绩。",
+      "languageRequirement": "Chinese-taught programs: a valid HSK 4 report (not needed if you earned a degree in China taught in Chinese). English-taught programs: valid IELTS, TOEFL or similar scores.",
       "deadline": "2027-03-20",
       "cscDeadline": null,
       "cscAgencyNumber": "10055",
@@ -542,12 +542,12 @@
         "MASTER": 3000,
         "PHD": 3500
       },
-      "languageRequirement": null,
+      "languageRequirement": "Chinese-taught: HSK 4 with 180 (science, engineering, economics, management) or HSK 5 with 180 (humanities, foreign languages). English-taught: TOEFL 80, IELTS 5.5 or Duolingo 100, or previous study in English. Age: Master's under 35, PhD under 40. Teaching is generally in Chinese, with some English programs.",
       "deadline": "2027-02-15",
       "cscDeadline": null,
       "cscAgencyNumber": "10141",
-      "officialUrl": "http://sie.dlut.edu.cn/info/1024/1991.htm",
-      "sourceUrl": "http://sie.dlut.edu.cn/info/1024/1991.htm",
+      "officialUrl": "https://sie.dlut.edu.cn/info/1024/1991.htm",
+      "sourceUrl": "https://sie.dlut.edu.cn/info/1024/1991.htm",
       "verification": "OFFICIAL_CHECKED",
       "lastChecked": "2026-11-11",
       "addedOn": "2026-11-05",
@@ -558,7 +558,7 @@
       "university": "Tsinghua University",
       "universityZh": "清华大学",
       "city": "Beijing",
-      "name": "Graduate Programs 2027",
+      "name": "Graduate admission with Chinese Government Scholarship (Type B) and other funding, 2027 entry. Application times are set by each department, roughly September to February",
       "provider": "Tsinghua University and China Scholarship Council",
       "degrees": [
         "MASTER",
@@ -570,8 +570,8 @@
       ],
       "lengths": [],
       "funding": "VARIES",
-      "coversTuition": true,
-      "coversHousing": true,
+      "coversTuition": null,
+      "coversHousing": null,
       "tuitionRmbPerYear": null,
       "stipendRmbByDegree": {},
       "languageRequirement": "Set by each school or department; see the program catalog on the admissions site. Application fee RMB 800.",
@@ -909,7 +909,7 @@
       "tuitionRmbPerYear": 25000,
       "stipendRmbByDegree": {},
       "languageRequirement": "Chinese-taught: HSK 5 with 180 or better. English-taught: IELTS 6.0 or TOEFL 90, or a certificate of English-medium schooling. You must first take the CSCA exam (China Scholastic Competency Assessment). Age generally 18 to 22. Without a scholarship, tuition is RMB 25,000 to 30,000 a year for most majors. Application fee RMB 400.",
-      "deadline": "2027-05-30",
+      "deadline": "2027-04-30",
       "cscDeadline": null,
       "cscAgencyNumber": null,
       "officialUrl": "https://is.buaa.edu.cn/en/lxsq/Undergraduate.htm",
@@ -1076,7 +1076,7 @@
       "university": "East China Normal University",
       "universityZh": "华东师范大学",
       "city": "Shanghai",
-      "name": "Chinese Government Scholarship Type B Ph.D. Program 2025 entry",
+      "name": "Chinese Government Scholarship Type B, Ph.D. Program, 2027 call not announced yet. The 2025 call closed 15 May 2025",
       "provider": "China Scholarship Council",
       "degrees": [
         "PHD"
@@ -1091,7 +1091,7 @@
         "PHD": 3500
       },
       "languageRequirement": null,
-      "deadline": "2025-05-15",
+      "deadline": null,
       "cscDeadline": null,
       "cscAgencyNumber": "10269",
       "officialUrl": "https://lxs.ecnu.edu.cn/en_scholarship_phd_chinese_government_scholarship_type_b/list.htm",
@@ -1106,7 +1106,7 @@
       "university": "Northeast Normal University",
       "universityZh": "东北师范大学",
       "city": "Changchun",
-      "name": "Chinese Government Scholarship High-level Graduates Program (Type-B) Master's Program 2026-2027",
+      "name": "Chinese Government Scholarship High-level Graduates Program (Type-B), Master's Program, 2027 call not announced yet. The 2026 call closed 22 February 2026",
       "provider": "China Scholarship Council",
       "degrees": [
         "MASTER"
@@ -1124,7 +1124,7 @@
         "MASTER": 3000
       },
       "languageRequirement": "Chinese-taught: HSK Level 5 >= 180 or degree from a Chinese university; English-taught: TOEFL >= 80 or IELTS >= 6.0, native/official language, or English-medium degree.",
-      "deadline": "2026-02-22",
+      "deadline": null,
       "cscDeadline": null,
       "cscAgencyNumber": "10200",
       "officialUrl": "https://iso.nenu.edu.cn/info/1038/2636.htm",
@@ -1132,14 +1132,14 @@
       "verification": "REPORTED",
       "lastChecked": null,
       "addedOn": "2026-11-11",
-      "updatedOn": null
+      "updatedOn": "2026-11-11"
     },
     {
       "id": "nenu-phd-2026-2027",
       "university": "Northeast Normal University",
       "universityZh": "东北师范大学",
       "city": "Changchun",
-      "name": "Chinese Government Scholarship High-level Graduates Program (Type-B) Doctoral Program 2026-2027",
+      "name": "Chinese Government Scholarship High-level Graduates Program (Type-B), Doctoral Program, 2027 call not announced yet. The 2026 call closed 22 February 2026",
       "provider": "China Scholarship Council",
       "degrees": [
         "PHD"
@@ -1157,7 +1157,7 @@
         "PHD": 3500
       },
       "languageRequirement": "Chinese-taught: HSK Level 5 >= 180 or degree from a Chinese university; English-taught: TOEFL >= 80 or IELTS >= 6.0, native/official language, or English-medium degree.",
-      "deadline": "2026-02-22",
+      "deadline": null,
       "cscDeadline": null,
       "cscAgencyNumber": "10200",
       "officialUrl": "https://iso.nenu.edu.cn/info/1038/2636.htm",
@@ -1165,14 +1165,14 @@
       "verification": "REPORTED",
       "lastChecked": null,
       "addedOn": "2026-11-11",
-      "updatedOn": null
+      "updatedOn": "2026-11-11"
     },
     {
       "id": "swu-cgs-b-2026-2027",
       "university": "Southwest University",
       "universityZh": "西南大学",
       "city": "Chongqing",
-      "name": "Chinese Government Scholarship-High Level Postgraduate Program (Type B) 2026-2027",
+      "name": "Chinese Government Scholarship, High Level Postgraduate Program (Type B), 2027 call not announced yet. The 2026 call closed 15 February 2026",
       "provider": "China Scholarship Council",
       "degrees": [
         "MASTER",
@@ -1186,7 +1186,7 @@
       "tuitionRmbPerYear": null,
       "stipendRmbByDegree": {},
       "languageRequirement": null,
-      "deadline": "2026-02-15",
+      "deadline": null,
       "cscDeadline": null,
       "cscAgencyNumber": "10635",
       "officialUrl": "https://gjxy.swu.edu.cn/info/1003/5033.htm",
@@ -1194,7 +1194,7 @@
       "verification": "REPORTED",
       "lastChecked": null,
       "addedOn": "2026-11-11",
-      "updatedOn": null
+      "updatedOn": "2026-11-11"
     },
     {
       "id": "tjufe-cgs-b-2027",
