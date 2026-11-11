@@ -1322,6 +1322,137 @@
       "lastChecked": null,
       "addedOn": "2026-11-11",
       "updatedOn": "2026-11-11"
+    },
+    {
+      "id": "soochow-master-2026-2027",
+      "university": "Soochow University",
+      "universityZh": "苏州大学",
+      "city": "Suzhou",
+      "name": "2026-2027 Master Program (Chinese Government Scholarship) (closed)",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 0
+      },
+      "languageRequirement": "Chinese-taught: HSK 5 scoring 180 or above. English-taught: TOEFL score >=80 / IELTS >=6.0 / Native English speaker / English as the medium of instruction for master program / other valid evidence.",
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10285",
+      "officialUrl": "http://apply.international.suda.edu.cn/apply_en/2026w2027SoochowUniversityApplicationNoticeforGraduateStudentsProgram_35671/list.htm",
+      "sourceUrl": "http://apply.international.suda.edu.cn/apply_en/2026w2027SoochowUniversityApplicationNoticeforGraduateStudentsProgram_35671/list.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "soochow-phd-2026-2027",
+      "university": "Soochow University",
+      "universityZh": "苏州大学",
+      "city": "Suzhou",
+      "name": "2026-2027 Doctoral Program (Chinese Government Scholarship) (closed)",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "Chinese-taught: HSK 5 scoring 180 or above. English-taught: TOEFL score >=80 / IELTS >=6.0 / Native English speaker / English as the medium of instruction for master program / other valid evidence.",
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10285",
+      "officialUrl": "http://apply.international.suda.edu.cn/apply_en/2026w2027SoochowUniversityApplicationNoticeforGraduateStudentsProgram_35671/list.htm",
+      "sourceUrl": "http://apply.international.suda.edu.cn/apply_en/2026w2027SoochowUniversityApplicationNoticeforGraduateStudentsProgram_35671/list.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "hnu-cgs-b-2027",
+      "university": "Hunan University",
+      "universityZh": "湖南大学",
+      "city": "Changsha",
+      "name": "Chinese Government Scholarship - University Postgraduate Study Program 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 1700,
+        "PHD": 2000
+      },
+      "languageRequirement": "In principle, the courses will be taught in Chinese. Some courses can be taught in English.",
+      "deadline": null,
+      "cscDeadline": null,
+      "cscAgencyNumber": "10532",
+      "officialUrl": "https://www-en.hnu.edu.cn/info/1113/2281.htm",
+      "sourceUrl": "https://www-en.hnu.edu.cn/info/1113/2281.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "xidian-cgs-b-2027",
+      "university": "Xidian University",
+      "universityZh": "西安电子科技大学",
+      "city": "Xi'an",
+      "name": "Chinese Government Scholarship - University Postgraduate Program 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": "2027-01-15",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10701",
+      "officialUrl": "https://sie.xidian.edu.cn/rxsq/jxj/zgzfjxj.htm",
+      "sourceUrl": "https://sie.xidian.edu.cn/rxsq/jxj/zgzfjxj.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
     }
   ]
 }
