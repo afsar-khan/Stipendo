@@ -1655,6 +1655,102 @@
       "lastChecked": null,
       "addedOn": "2026-11-11",
       "updatedOn": null
+    },
+    {
+      "id": "jliau-cgs-b-2027",
+      "university": "Jilin Agricultural University",
+      "universityZh": "吉林农业大学",
+      "city": "Changchun",
+      "name": "2027/2028 Chinese Government Scholarship High-Level Postgraduate Program",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": null,
+      "cscDeadline": "2027-02-10",
+      "cscAgencyNumber": "10193",
+      "officialUrl": "https://gjjy.jlau.edu.cn/info/1039/1735.htm",
+      "sourceUrl": "https://gjjy.jlau.edu.cn/info/1039/1735.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "tfsu-cgs-b-2027",
+      "university": "Tianjin Foreign Studies University",
+      "universityZh": "天津外国语大学",
+      "city": "Tianjin",
+      "name": "Chinese Government Scholarship - High Level Postgraduate Program (Type B) 2027 entry",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": null,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "MASTER:3000;PHD:3500",
+      "deadline": "2027-02-21",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10068",
+      "officialUrl": "https://isa.tjfsu.edu.cn/info/1040/1932.htm",
+      "sourceUrl": "https://isa.tjfsu.edu.cn/info/1040/1932.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
+    },
+    {
+      "id": "ustb-cgs-b-2027",
+      "university": "University of Science and Technology Beijing",
+      "universityZh": "北京科技大学",
+      "city": "Beijing",
+      "name": "2027 Chinese Government Scholarship High-Level Postgraduate Program",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": null,
+      "deadline": "2027-03-10",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10008",
+      "officialUrl": "https://isc.ustb.edu.cn/tz/b0b4962559344f1c89e88ebffdd5b5b9.htm",
+      "sourceUrl": "https://isc.ustb.edu.cn/tz/b0b4962559344f1c89e88ebffdd5b5b9.htm",
+      "verification": "REPORTED",
+      "lastChecked": null,
+      "addedOn": "2026-11-11",
+      "updatedOn": null
     }
   ]
 }
