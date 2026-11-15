@@ -1983,6 +1983,38 @@
       "lastChecked": null,
       "addedOn": "2026-11-15",
       "updatedOn": null
+    },
+    {
+      "id": "cau-cgs-b-2027",
+      "university": "China Agricultural University",
+      "universityZh": "中国农业大学",
+      "city": "Beijing",
+      "name": "Chinese Government Scholarship (Type B), High-Level Postgraduate Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "English-taught: TOEFL iBT 90 or IELTS 6.5 (or previous English-medium study). Chinese-taught: HSK 5.",
+      "deadline": "2027-02-28",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10019",
+      "officialUrl": "https://admissions.cau.edu.cn/art/2026/10/28/art_48608_1143304.html",
+      "sourceUrl": "https://admissions.cau.edu.cn/art/2026/10/28/art_48608_1143304.html",
+      "verification": "REPORTED",
+      "lastChecked": "2026-11-15",
+      "addedOn": "2026-11-15",
+      "updatedOn": null
     }
   ]
 }
