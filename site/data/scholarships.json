@@ -2015,6 +2015,38 @@
       "lastChecked": "2026-11-15",
       "addedOn": "2026-11-15",
       "updatedOn": null
+    },
+    {
+      "id": "lzu-cgs-b-2027",
+      "university": "Lanzhou University",
+      "universityZh": "兰州大学",
+      "city": "Lanzhou",
+      "name": "Chinese Government Scholarship (Type B), High-Level Postgraduate Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "Chinese-taught: HSK 4 (210+); literature, history and philosophy need HSK 5 (180+); MA in Teaching Chinese needs HSK 5 (210+) and HSKK intermediate 60+. English-taught: IELTS 6 or TOEFL 80, or other proof of English; native speakers exempt.",
+      "deadline": "2027-02-28",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10730",
+      "officialUrl": "https://sice.lzu.edu.cn/hdapp/bas/col_detail.php?id=1248",
+      "sourceUrl": "https://sice.lzu.edu.cn/hdapp/bas/col_detail.php?id=1248",
+      "verification": "REPORTED",
+      "lastChecked": "2026-11-15",
+      "addedOn": "2026-11-15",
+      "updatedOn": null
     }
   ]
 }
