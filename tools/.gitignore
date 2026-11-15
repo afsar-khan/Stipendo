@@ -1,7 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Secret API keys (never commit)
+.env
+
+# Local working files
 drafts_*
 *.state.json
 *.changes.json
 radar_report.md
 notice_suggestions_*.md
 csc_universities.backup.csv
-__pycache__/
+*.backup.csv

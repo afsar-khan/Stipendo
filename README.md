@@ -1,7 +1,7 @@
-# Stipendo v24: find out what your free Gemini key can do
+# Stipendo v26: draft in safe batches
 
-Copy tools\check_gemini.py and tools\find_notice_pages.py over your project (replace the second). Then in PowerShell:
-    cd F:\Stipendo\tools
-    python check_gemini.py
-It tests your model (and three others) with one plain request and one Google Search request each, and tells you what to do.
-Do not run it repeatedly: every request counts toward the daily quota.
+Replace tools\draft_rows.py. Then (PowerShell, inside F:\Stipendo\tools):
+    python draft_rows.py <one official page address>                       # first test, on a page whose answer you know
+    python draft_rows.py --universities --todo-only --limit 5               # next 5 universities that are not in the app yet
+Run again the next day for the next 5. It waits 5 seconds between pages to stay under the free per-minute limit.
+Put GEMINI_API_KEY (and optionally GEMINI_MODEL=gemini-3.5-flash-lite) in .env. Never commit .env.

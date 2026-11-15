@@ -158,11 +158,22 @@ fun SearchScreen(
                 }
             }
 
+            Text(t.chooseTitle, style = MaterialTheme.typography.headlineSmall, color = colors.textPrimary)
+
+            NeuCard {
+                Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
+                    FilterGroup(t.degree, degreeOptions, degree, { t.degrees.getValue(it) }, onDegree)
+                    FilterGroup(t.duration, lengthOptions, length, { t.lengthLabels.getValue(it) }, onLength)
+                    FilterGroup(t.funding, fundingOptions, funding, { t.fundingChip.getValue(it) }, onFunding)
+                    FilterGroup(t.teachingLanguage, languageOptions, language, { t.teaching.getValue(it) }, onLanguage)
+                }
+            }
+
             if (newItems.isNotEmpty()) {
                 NeuCard {
                     Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                         Text(t.newThisWeek, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
-                        newItems.forEach { item ->
+                        newItems.take(2).forEach { item ->
                             Column(
                                 modifier = Modifier
                                     .fillMaxWidth()
@@ -184,7 +195,7 @@ fun SearchScreen(
                 NeuCard {
                     Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                         Text(t.closingSoon, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
-                        closingSoon.forEach { item ->
+                        closingSoon.take(2).forEach { item ->
                             Column(
                                 modifier = Modifier
                                     .fillMaxWidth()
@@ -199,17 +210,6 @@ fun SearchScreen(
                             }
                         }
                     }
-                }
-            }
-
-            Text(t.chooseTitle, style = MaterialTheme.typography.headlineSmall, color = colors.textPrimary)
-
-            NeuCard {
-                Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
-                    FilterGroup(t.degree, degreeOptions, degree, { t.degrees.getValue(it) }, onDegree)
-                    FilterGroup(t.duration, lengthOptions, length, { t.lengthLabels.getValue(it) }, onLength)
-                    FilterGroup(t.funding, fundingOptions, funding, { t.fundingChip.getValue(it) }, onFunding)
-                    FilterGroup(t.teachingLanguage, languageOptions, language, { t.teaching.getValue(it) }, onLanguage)
                 }
             }
         }

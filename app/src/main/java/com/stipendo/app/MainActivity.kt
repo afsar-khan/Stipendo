@@ -43,6 +43,7 @@ import com.stipendo.app.data.Scholarship
 import com.stipendo.app.data.StudyLength
 import com.stipendo.app.data.ScholarshipRepository
 import com.stipendo.app.data.TeachingLanguage
+import com.stipendo.app.data.Verification
 import com.stipendo.app.ui.AppLanguage
 import androidx.core.content.ContextCompat
 import com.stipendo.app.reminders.Reminders
@@ -145,11 +146,14 @@ fun StipendoApp(scholarships: List<Scholarship>, lang: AppLanguage, onLang: (App
     }
 
     // Entries added in the last 7 days.
-    val newItems = remember(scholarships) { scholarships.filter { isRecent(it.addedOn) }.take(3) }
+    // One line per university (a university with a Master's and a PhD entry would otherwise appear twice).
+    val newItems = remember(scholarships) { scholarships.filter { isRecent(it.addedOn) }.distinctBy { it.university }.take(3) }
 
-    // Soonest open deadlines in the next 90 days.
+    // Soonest open deadlines in the next 90 days. Only entries checked on an official page appear here,
+    // because this card is the first thing students see and a wrong date would do the most harm.
     val closingSoon = remember(scholarships) {
         scholarships
+            .filter { it.verification == Verification.OFFICIAL_CHECKED }
             .mapNotNull { item -> daysUntil(item.deadline)?.takeIf { it in 0..90 }?.let { item to it } }
             .sortedBy { it.second }
             .take(3)

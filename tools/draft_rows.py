@@ -23,7 +23,7 @@ into scholarships.csv, then run csv_to_json.py as usual. The converter validates
 
 Models: Gemini default gemini-3.5-flash-lite (set GEMINI_MODEL to change); Claude default claude-sonnet-5-5 (STIPENDO_MODEL).
 """
-import argparse, csv, datetime, json, os, re, sys, urllib.request
+import argparse, csv, datetime, json, os, re, sys, time, urllib.request
 from pathlib import Path
 from pagetext import page_text
 
@@ -243,6 +243,8 @@ def main():
     ap.add_argument("urls", nargs="*")
     ap.add_argument("--changed", action="store_true", help="use the pages watch_pages.py flagged as changed")
     ap.add_argument("--universities", action="store_true", help="use the noticeUrl column of csc_universities.csv")
+    ap.add_argument("--todo-only", action="store_true", help="with --universities: skip universities already in the app")
+    ap.add_argument("--limit", type=int, default=0, help="draft at most this many pages in one run (free quotas are limited)")
     ap.add_argument("--changes-file", default=str(HERE / "watch_list.changes.json"))
     ap.add_argument("--page-file", help="testing: read the page text from this file instead of the web")
     ap.add_argument("--response-file", help="testing: read the model's answer from this file instead of calling the API")
@@ -255,10 +257,14 @@ def main():
     if a.universities:
         try:
             with open(HERE / "csc_universities.csv", encoding="utf-8-sig") as f:
-                urls += [r["noticeUrl"].strip() for r in csv.DictReader(f) if r.get("noticeUrl", "").strip()]
+                urls += [r["noticeUrl"].strip() for r in csv.DictReader(f)
+                         if r.get("noticeUrl", "").strip() and not (a.todo_only and r.get("status", "").startswith("in app"))]
         except Exception as e: sys.exit(f"Cannot read csc_universities.csv: {e}")
         if not urls: sys.exit("No noticeUrl filled in csc_universities.csv yet. Add the address of each university's notice page first.")
     urls = list(dict.fromkeys(urls))   # no page twice
+    if a.limit and len(urls) > a.limit:
+        print(f"{len(urls)} pages found; drafting the first {a.limit}. Run again for the rest (the free quota is limited).")
+        urls = urls[:a.limit]
     if not urls: sys.exit("Nothing to do. Give page addresses, or use --changed after running watch_pages.py.")
 
     load_env()
@@ -285,6 +291,7 @@ def main():
         rows, lines = process_page(url, text, ask, header, used, today)
         all_rows += rows; report += lines
         print(f"{len(rows)} draft(s)  {url}")
+        if not a.response_file and len(urls) > 1: time.sleep(5)     # stay under the per-minute limit
 
     stamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
     (HERE / f"drafts_{stamp}.evidence.md").write_text("\n".join(report), encoding="utf-8")
