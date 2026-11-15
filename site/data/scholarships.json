@@ -2047,6 +2047,40 @@
       "lastChecked": "2026-11-15",
       "addedOn": "2026-11-15",
       "updatedOn": null
+    },
+    {
+      "id": "nuaa-cgs-b-2027",
+      "university": "Nanjing University of Aeronautics and Astronautics",
+      "universityZh": "南京航空航天大学",
+      "city": "Nanjing",
+      "name": "Chinese Government Scholarship (Type B), University Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "English test result (IELTS, TOEFL, Duolingo, PTE or equivalent); no minimum score stated.",
+      "deadline": "2027-03-30",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10287",
+      "officialUrl": "https://ciee.nuaa.edu.cn/academics/scholarships-fees/chinese-government-scholarship",
+      "sourceUrl": "https://ciee.nuaa.edu.cn/academics/scholarships-fees/chinese-government-scholarship",
+      "verification": "REPORTED",
+      "lastChecked": "2026-11-15",
+      "addedOn": "2026-11-15",
+      "updatedOn": null
     }
   ]
 }
