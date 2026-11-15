@@ -2081,6 +2081,41 @@
       "lastChecked": "2026-11-15",
       "addedOn": "2026-11-15",
       "updatedOn": null
+    },
+    {
+      "id": "neu-cgs-b-2027",
+      "university": "Northeastern University",
+      "universityZh": "东北大学",
+      "city": "Shenyang",
+      "name": "Chinese Government Scholarship (Type B), High-Level Postgraduate Program and Silk Road Program, 2027",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "ENGLISH",
+        "CHINESE"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": true,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {
+        "MASTER": 3000,
+        "PHD": 3500
+      },
+      "languageRequirement": "Chinese-taught: HSK 4 (180+). English-taught: TOEFL 80, IELTS 5.5 or Duolingo 100, or previous English-medium study; applicants from English-speaking countries exempt.",
+      "deadline": "2027-01-31",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10145",
+      "officialUrl": "http://studyinneu.neu.edu.cn/html/article_content/202610/71C6675B7C3749DA85379684D8299E44.shtml",
+      "sourceUrl": "http://studyinneu.neu.edu.cn/html/article_content/202610/71C6675B7C3749DA85379684D8299E44.shtml",
+      "verification": "REPORTED",
+      "lastChecked": "2026-11-15",
+      "addedOn": "2026-11-15",
+      "updatedOn": null
     }
   ]
 }
