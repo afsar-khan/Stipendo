@@ -19,7 +19,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
@@ -36,7 +38,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.stipendo.app.data.CSC_PORTAL_URL
 import com.stipendo.app.data.DegreeLevel
 import com.stipendo.app.data.Funding
@@ -103,6 +107,7 @@ fun SearchScreen(
     newItems: List<Scholarship>,
     closingSoon: List<Scholarship>,
     savedCount: Int,
+    themeMode: ThemeMode, onThemeMode: (ThemeMode) -> Unit,
     onOpenSaved: () -> Unit,
     onOpen: (Scholarship) -> Unit,
     onGo: () -> Unit,
@@ -110,6 +115,7 @@ fun SearchScreen(
     val t = LocalStrings.current
     val colors = LocalNeu.current
     var showLanguages by rememberSaveable { mutableStateOf(false) }
+    val anyFilter = degree != null || length != null || funding != null || language != null
 
     Column(modifier = Modifier.fillMaxSize()) {
         // Scrollable part
@@ -118,16 +124,21 @@ fun SearchScreen(
                 .weight(1f)
                 .verticalScroll(rememberScrollState())
                 .padding(start = 24.dp, end = 24.dp, top = 24.dp, bottom = 16.dp),
-            verticalArrangement = Arrangement.spacedBy(24.dp),
+            verticalArrangement = Arrangement.spacedBy(28.dp),
         ) {
-            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            // 1. Header: wordmark on the left, round buttons on the right
+            Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    StipendoWordmark()
-                    NeuChip(lang.nativeName, selected = showLanguages) { showLanguages = !showLanguages }
+                    StipendoWordmark(fontSize = 30.sp)
+                    Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                        NeuRoundButton(themeMode.icon, description = "Theme: ${themeMode.label}") { onThemeMode(themeMode.next()) }
+                        NeuRoundButton("\u6587", description = t.language, selected = showLanguages) { showLanguages = !showLanguages }
+                        NeuRoundButton("\u2661", description = t.saved, badge = savedCount, onClick = onOpenSaved)
+                    }
                 }
                 AnimatedVisibility(
                     visible = showLanguages,
@@ -138,89 +149,110 @@ fun SearchScreen(
                         NeuCard {
                             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                                 Text(t.language, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
-                                FlowRow(
-                                    horizontalArrangement = Arrangement.spacedBy(14.dp),
-                                    verticalArrangement = Arrangement.spacedBy(16.dp),
-                                ) {
-                                    AppLanguage.entries.forEach { l ->
-                                        NeuChip(l.nativeName, selected = l == lang) { onLang(l) }
-                                    }
-                                }
+                                NeuOptionGrid(
+                                    options = AppLanguage.entries.toList(),
+                                    selected = lang,
+                                    label = { it?.nativeName ?: "" },
+                                    onSelect = { if (it != null) onLang(it) },
+                                )
                             }
                         }
                     }
                 }
                 Text(t.tagline, style = MaterialTheme.typography.bodyMedium, color = colors.textSecondary)
-                if (savedCount > 0) {
-                    Row(modifier = Modifier.padding(top = 4.dp)) {
-                        NeuChip("${t.saved} ($savedCount)", selected = false, onClick = onOpenSaved)
+            }
+
+            // 2. Closing soon: a sideways rail of equal cards
+            if (closingSoon.isNotEmpty()) {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(t.closingSoon, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
+                    LazyRow(
+                        horizontalArrangement = Arrangement.spacedBy(18.dp),
+                        contentPadding = PaddingValues(start = 4.dp, end = 4.dp, top = 12.dp, bottom = 18.dp),
+                    ) {
+                        items(closingSoon.take(5)) { item ->
+                            val days = daysUntil(item.deadline) ?: 0
+                            NeuCard(modifier = Modifier.width(164.dp), onClick = { onOpen(item) }) {
+                                Column(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalAlignment = Alignment.CenterHorizontally,
+                                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                                ) {
+                                    NeuGauge(days.toString(), urgent = days <= 45, description = t.daysLeft(days))
+                                    Text(
+                                        item.university,
+                                        style = MaterialTheme.typography.titleMedium,
+                                        color = colors.textPrimary,
+                                        textAlign = TextAlign.Center,
+                                        maxLines = 3,
+                                    )
+                                }
+                            }
+                        }
                     }
                 }
             }
 
-            Text(t.chooseTitle, style = MaterialTheme.typography.headlineSmall, color = colors.textPrimary)
+            // 3. New this week: one card, rows separated by grooves
+            if (newItems.isNotEmpty()) {
+                Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Text(t.newThisWeek, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
+                    NeuCard {
+                        newItems.take(3).forEachIndexed { i, item ->
+                            if (i > 0) NeuGroove()
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable(role = Role.Button) { onOpen(item) }
+                                    .padding(vertical = 14.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically,
+                            ) {
+                                Text(
+                                    item.university,
+                                    style = MaterialTheme.typography.titleMedium,
+                                    color = colors.textPrimary,
+                                    modifier = Modifier.weight(1f),
+                                )
+                                Spacer(Modifier.width(12.dp))
+                                NeuTag(t.fundingChip.getValue(item.funding), highlight = item.funding == Funding.FULL)
+                            }
+                        }
+                    }
+                }
+            }
 
+            // 4. Filters: four groups, every button on the same 3-column grid
+            Text(t.chooseTitle, style = MaterialTheme.typography.headlineSmall, color = colors.textPrimary)
             NeuCard {
-                Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
+                Column(verticalArrangement = Arrangement.spacedBy(24.dp)) {
                     FilterGroup(t.degree, degreeOptions, degree, { t.degrees.getValue(it) }, onDegree)
                     FilterGroup(t.duration, lengthOptions, length, { t.lengthLabels.getValue(it) }, onLength)
                     FilterGroup(t.funding, fundingOptions, funding, { t.fundingChip.getValue(it) }, onFunding)
                     FilterGroup(t.teachingLanguage, languageOptions, language, { t.teaching.getValue(it) }, onLanguage)
                 }
             }
-
-            if (newItems.isNotEmpty()) {
-                NeuCard {
-                    Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                        Text(t.newThisWeek, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
-                        newItems.take(2).forEach { item ->
-                            Column(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .clickable(role = Role.Button) { onOpen(item) },
-                            ) {
-                                Text(item.university, style = MaterialTheme.typography.titleMedium, color = colors.textPrimary)
-                                Text(
-                                    t.fundingLine.getValue(item.funding),
-                                    style = MaterialTheme.typography.bodyMedium,
-                                    color = colors.accent,
-                                )
-                            }
-                        }
-                    }
-                }
-            }
-
-            if (closingSoon.isNotEmpty()) {
-                NeuCard {
-                    Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                        Text(t.closingSoon, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
-                        closingSoon.take(2).forEach { item ->
-                            Column(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .clickable(role = Role.Button) { onOpen(item) },
-                            ) {
-                                Text(item.university, style = MaterialTheme.typography.titleMedium, color = colors.textPrimary)
-                                Text(
-                                    t.daysLeft(daysUntil(item.deadline) ?: 0),
-                                    style = MaterialTheme.typography.bodyMedium,
-                                    color = colors.accent,
-                                )
-                            }
-                        }
-                    }
-                }
-            }
         }
 
-        // Pinned action: never pushed off the screen, whatever the phone size.
-        Column(modifier = Modifier.fillMaxWidth().padding(start = 24.dp, end = 24.dp, top = 8.dp, bottom = 24.dp)) {
+        // Pinned action bar: reset (only when a filter is on) + the main button
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 24.dp, end = 24.dp, top = 8.dp, bottom = 24.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            if (anyFilter) {
+                NeuRoundButton("\u21BA", description = "Reset") {
+                    onDegree(null); onLength(null); onFunding(null); onLanguage(null)
+                }
+            }
             NeuButton(
                 text = if (matchCount == 0) t.noMatchButton else t.showResults(matchCount),
                 emphasized = matchCount > 0,
                 enabled = matchCount > 0,
                 onClick = onGo,
+                modifier = Modifier.weight(1f),
             )
         }
     }
@@ -286,7 +318,7 @@ fun ResultsScreen(
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun <T> FilterGroup(
+private fun <T : Any> FilterGroup(
     title: String,
     options: List<T>,
     selected: T?,
@@ -298,17 +330,12 @@ private fun <T> FilterGroup(
     if (options.isEmpty()) return
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text(title, style = MaterialTheme.typography.labelLarge, color = colors.textSecondary)
-        FlowRow(
-            horizontalArrangement = Arrangement.spacedBy(14.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
-        ) {
-            NeuChip(t.all, selected = selected == null) { onSelect(null) }
-            options.forEach { option ->
-                NeuChip(label(option), selected = selected == option) {
-                    onSelect(if (selected == option) null else option)
-                }
-            }
-        }
+        NeuOptionGrid(
+            options = listOf<T?>(null) + options,
+            selected = selected,
+            label = { o -> if (o == null) t.all else label(o) },
+            onSelect = onSelect,
+        )
     }
 }
 

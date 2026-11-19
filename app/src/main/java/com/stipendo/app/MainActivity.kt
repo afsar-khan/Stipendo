@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -16,6 +17,7 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,6 +25,7 @@ import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
@@ -57,6 +60,7 @@ import com.stipendo.app.ui.filterScholarships
 import com.stipendo.app.ui.LocalNeu
 import com.stipendo.app.ui.LocalStrings
 import com.stipendo.app.ui.StipendoTheme
+import com.stipendo.app.ui.ThemeMode
 import com.stipendo.app.ui.stringsFor
 import java.util.Locale
 import kotlinx.coroutines.Dispatchers
@@ -71,11 +75,28 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         // First launch: use the phone's language if the app supports it, otherwise English.
         val startLanguage = AppLanguage.fromCode(prefs.getString("lang", null) ?: Locale.getDefault().language)
+        val startTheme = ThemeMode.fromName(prefs.getString("theme", null))
         val startData = ScholarshipRepository.load(this)
         Reminders.rescheduleAll(this, startData)   // keeps reminders right after data updates
         setContent {
             var lang by rememberSaveable { mutableStateOf(startLanguage) }
             var scholarships by remember { mutableStateOf(startData) }
+            var themeMode by rememberSaveable { mutableStateOf(startTheme) }
+            val systemDark = isSystemInDarkTheme()
+            val dark = when (themeMode) {
+                ThemeMode.DARK -> true
+                ThemeMode.LIGHT -> false
+                ThemeMode.SYSTEM -> systemDark
+            }
+
+            // Keep the status bar and navigation bar icons readable in whichever theme is chosen.
+            DisposableEffect(dark) {
+                enableEdgeToEdge(
+                    statusBarStyle = SystemBarStyle.auto(android.graphics.Color.TRANSPARENT, android.graphics.Color.TRANSPARENT) { dark },
+                    navigationBarStyle = SystemBarStyle.auto(android.graphics.Color.TRANSPARENT, android.graphics.Color.TRANSPARENT) { dark },
+                )
+                onDispose { }
+            }
 
             // Show what is on the phone straight away, then check the website for newer data.
             LaunchedEffect(Unit) {
@@ -85,10 +106,15 @@ class MainActivity : ComponentActivity() {
                     Reminders.rescheduleAll(applicationContext, updated)
                 }
             }
-            StipendoTheme {
+            StipendoTheme(darkTheme = dark) {
                 StipendoApp(
                     scholarships = scholarships,
                     lang = lang,
+                    themeMode = themeMode,
+                    onThemeMode = {
+                        themeMode = it
+                        prefs.edit().putString("theme", it.name).apply()
+                    },
                     onLang = {
                         lang = it
                         prefs.edit().putString("lang", it.code).apply()
@@ -100,7 +126,13 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun StipendoApp(scholarships: List<Scholarship>, lang: AppLanguage, onLang: (AppLanguage) -> Unit) {
+fun StipendoApp(
+    scholarships: List<Scholarship>,
+    lang: AppLanguage,
+    onLang: (AppLanguage) -> Unit,
+    themeMode: ThemeMode,
+    onThemeMode: (ThemeMode) -> Unit,
+) {
     val colors = LocalNeu.current
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
@@ -228,6 +260,8 @@ fun StipendoApp(scholarships: List<Scholarship>, lang: AppLanguage, onLang: (App
                         newItems = newItems,
                         closingSoon = closingSoon,
                         savedCount = saved.size,
+                        themeMode = themeMode,
+                        onThemeMode = onThemeMode,
                         onOpenSaved = { onSaved = true },
                         onOpen = { selectedId = it.id },
                         onGo = {
