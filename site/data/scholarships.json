@@ -2185,6 +2185,38 @@
       "lastChecked": null,
       "addedOn": "2026-11-18",
       "updatedOn": null
+    },
+    {
+      "id": "jlu-cgs-b-2027-2028",
+      "university": "Jilin University",
+      "universityZh": "吉林大学",
+      "city": "Changchun",
+      "name": "Chinese Government Scholarship High-Level Graduate Program (Type B), 2027/2028 entry",
+      "provider": "China Scholarship Council",
+      "degrees": [
+        "MASTER",
+        "PHD"
+      ],
+      "languages": [
+        "CHINESE",
+        "ENGLISH"
+      ],
+      "lengths": [],
+      "funding": "FULL",
+      "coversTuition": true,
+      "coversHousing": null,
+      "tuitionRmbPerYear": null,
+      "stipendRmbByDegree": {},
+      "languageRequirement": "Chinese-taught programs: HSK 4. Other requirements depend on the program.",
+      "deadline": "2027-03-01",
+      "cscDeadline": null,
+      "cscAgencyNumber": "10183",
+      "officialUrl": "http://cie.jlu.edu.cn/info/1060/3833.htm",
+      "sourceUrl": "http://cie.jlu.edu.cn/info/1060/3833.htm",
+      "verification": "OFFICIAL_CHECKED",
+      "lastChecked": "2026-11-15",
+      "addedOn": "2026-11-19",
+      "updatedOn": null
     }
   ]
 }
